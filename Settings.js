@@ -1,6 +1,6 @@
 ﻿var organizationSettings = {
     //The url that points to team city
-    teamCityUrl: 'https://todo.edit.this.url.invalid',
+    teamCityUrl: 'http://bib:8080/',
 
     //Only show builds for branches that satisfy the predicate
     branchFilter: function(branch) {
@@ -71,7 +71,7 @@ var authType = Settings.useTeamCityGuest ? 'guestAuth' : 'httpAuth';
 //----------------------
 
 Settings.teamCityBaseUrl = Settings.proxy + Settings.teamCityUrl;
-Settings.restApiBaseUrl = Settings.teamCityBaseUrl + '/' + authType + '/app/rest/2017.2';
+Settings.restApiBaseUrl = Settings.teamCityBaseUrl + '/' + authType + '/app/rest/2018.2.2';
 
 //The url for the list of build types (used for mapping the build id (e.g. bt11) to the name (e.g. Website Tests)
 Settings.buildTypesUrl = Settings.restApiBaseUrl + '/buildTypes';
